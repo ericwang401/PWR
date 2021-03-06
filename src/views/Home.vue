@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+  <div class="h-screen w-full bg-red-600">
   </div>
 </template>
 
