@@ -21,7 +21,7 @@ export default defineComponent({
           <div class="flex-shrink-0">
             <h1 class="font-bold text-4xl">PWR.</h1>
           </div>
-          <div class="h-16 hidden md:block">
+          <div class="h-16 hidden lg:block">
             <div class="h-full ml-10 flex items-baseline">
               <router-link
                 v-for="link in links"
@@ -47,7 +47,7 @@ export default defineComponent({
           </div>
         </div>
 
-        <div class="h-16 hidden md:block">
+        <div class="h-16 hidden lg:block">
           <div class="h-full ml-10 flex space-x-3 items-center">
 
             <router-link
