@@ -26,11 +26,6 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Home.vue'),
       },
       {
-        name: "Contact Us",
-        path: "contact-us",
-        component: () => import('@/views/Home.vue'),
-      },
-      {
         name: "Buy Now",
         path: "buy-now",
         component: () => import('@/views/Home.vue'),

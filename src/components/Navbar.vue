@@ -31,10 +31,10 @@ export default defineComponent({
                 custom
               >
                 <a
-                  class="flex items-center h-full px-6 focus:outline-none text-lg font-regular"
+                  class="transition-colors flex items-center h-full px-6 focus:outline-none text-lg font-regular border-b-2 border-transparent"
                   :class="{
-                    'font-semibold': isExactActive,
-                    'hover:bg-gray-100': !isExactActive,
+                    'text-black border-b-2 border-black bg-gray-200': isExactActive,
+                    'text-gray-500 hover:bg-gray-100': !isExactActive,
                   }"
                   :href="href"
                   @click="navigate"
@@ -48,25 +48,7 @@ export default defineComponent({
         </div>
 
         <div class="h-16 hidden md:block">
-          <div class="h-full ml-10 flex space-x-3 items-baseline">
-            <router-link
-              :to="{ name: 'Contact Us' }"
-              v-slot="{ isExactActive, navigate, href }"
-              custom
-            >
-              <a
-                class="flex items-center h-full px-6 focus:outline-none text-lg font-regular"
-                :class="{
-                  'font-semibold': isExactActive,
-                  'hover:bg-gray-100': !isExactActive,
-                }"
-                :href="href"
-                @click="navigate"
-                :disabled="isExactActive"
-              >
-                Contact Us
-              </a>
-            </router-link>
+          <div class="h-full ml-10 flex space-x-3 items-center">
 
             <router-link
               :to="{ name: 'Buy Now' }"
@@ -74,10 +56,7 @@ export default defineComponent({
               custom
             >
               <a
-                class="flex items-center bg-red-500 text-white rounded-md py-2 px-7 focus:outline-none text-lg font-semibold"
-                :class="{
-                  'hover:bg-gray-100': !isExactActive,
-                }"
+                class="transition-colors flex items-center border-2 border-red-500 bg-red-500 text-white rounded-md py-1.5 px-7 hover:bg-transparent hover:text-red-500 focus:outline-none text-lg font-semibold"
                 :href="href"
                 @click="navigate"
                 :disabled="isExactActive"
