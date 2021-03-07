@@ -5,8 +5,8 @@ import VNavbar from "@/components/Navbar.vue";
 export default defineComponent({
   name: "Default",
   components: {
-      VNavbar
-  }
+    VNavbar,
+  },
 });
 </script>
 

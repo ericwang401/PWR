@@ -3,6 +3,13 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Navbar",
+  setup() {
+    const links = ["Home", "Technology", "Specifications", "Reviews"];
+
+    return {
+      links,
+    };
+  },
 });
 </script>
 
@@ -16,32 +23,68 @@ export default defineComponent({
           </div>
           <div class="h-16 hidden md:block">
             <div class="h-full ml-10 flex items-baseline">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a
-                href="#"
-                class="flex items-center h-full px-6 hover:bg-gray-100 text-lg font-semibold"
-                >Home
-              </a>
-              
-              <a
-                href="#"
-                class="flex items-center h-full px-6 hover:bg-gray-100 text-lg font-regular"
-                >Technology
-              </a>
-              
-              <a
-                href="#"
-                class="flex items-center h-full px-6 hover:bg-gray-100 text-lg font-regular"
-                >Specifications
-              </a>
-              
-              <a
-                href="#"
-                class="flex items-center h-full px-6 hover:bg-gray-100 text-lg font-regular"
-                >Reviews
-              </a>
-
+              <router-link
+                v-for="link in links"
+                :key="link"
+                :to="{ name: link }"
+                v-slot="{ isExactActive, navigate, href }"
+                custom
+              >
+                <a
+                  class="flex items-center h-full px-6 focus:outline-none text-lg font-regular"
+                  :class="{
+                    'font-semibold': isExactActive,
+                    'hover:bg-gray-100': !isExactActive,
+                  }"
+                  :href="href"
+                  @click="navigate"
+                  :disabled="isExactActive"
+                >
+                  {{ link }}
+                </a>
+              </router-link>
             </div>
+          </div>
+        </div>
+
+        <div class="h-16 hidden md:block">
+          <div class="h-full ml-10 flex space-x-3 items-baseline">
+            <router-link
+              :to="{ name: 'Contact Us' }"
+              v-slot="{ isExactActive, navigate, href }"
+              custom
+            >
+              <a
+                class="flex items-center h-full px-6 focus:outline-none text-lg font-regular"
+                :class="{
+                  'font-semibold': isExactActive,
+                  'hover:bg-gray-100': !isExactActive,
+                }"
+                :href="href"
+                @click="navigate"
+                :disabled="isExactActive"
+              >
+                Contact Us
+              </a>
+            </router-link>
+
+            <router-link
+              :to="{ name: 'Buy Now' }"
+              v-slot="{ isExactActive, navigate, href }"
+              custom
+            >
+              <a
+                class="flex items-center bg-red-500 text-white rounded-md py-2 px-7 focus:outline-none text-lg font-semibold"
+                :class="{
+                  'hover:bg-gray-100': !isExactActive,
+                }"
+                :href="href"
+                @click="navigate"
+                :disabled="isExactActive"
+              >
+                Buy Now
+              </a>
+            </router-link>
           </div>
         </div>
       </div>
