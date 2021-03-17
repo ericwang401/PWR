@@ -3,16 +3,16 @@
     <svg
       class="absolute hidden lg:block transform translate-x-1/20"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1737.538 1076.306"
+      viewBox="0 0 1737 1076.306"
     >
       <defs>
         <clipPath id="clip-path">
           <path
-            id="Path_5"
-            data-name="Path 5"
-            d="M-1350.77-5164l-467.693,1076.306h1140V-5164Z"
-            transform="translate(2599 5171.694)"
-            fill="#ff2424"
+            id="Path_8"
+            data-name="Path 8"
+            d="M-1339.914-5164l-478.549,1076.306H-652V-5164Z"
+            transform="translate(2572 5171.694)"
+            fill="#fff"
           />
         </clipPath>
       </defs>
@@ -29,13 +29,13 @@
       <path
         id="Path_2"
         data-name="Path 2"
-        d="M-1350.77-5164l-467.693,1076.306h1140V-5164Z"
-        transform="translate(2416 5164)"
+        d="M-1339.914-5164l-478.549,1076.306H-652V-5164Z"
+        transform="translate(2389 5164)"
         fill="#ff2424"
       />
       <g
-        id="Mask_Group_1"
-        data-name="Mask Group 1"
+        id="Mask_Group_2"
+        data-name="Mask Group 2"
         transform="translate(-183 -7.694)"
         clip-path="url(#clip-path)"
       >
@@ -52,8 +52,6 @@
         </text>
       </g>
     </svg>
-
-    
   </div>
 </template>
 
