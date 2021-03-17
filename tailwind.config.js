@@ -7,6 +7,9 @@ module.exports = {
         sans: ["Poppins", "sans-serif"],
         heading: ["Poppins", "sans-serif"],
       },
+      translate: {
+        '1/20': '5%',
+      }
     },
   },
   variants: {

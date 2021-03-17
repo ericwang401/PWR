@@ -1,20 +1,22 @@
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "Navbar",
   setup() {
     const links = ["Home", "Technology", "Specifications", "Reviews"];
+    const active = ref(false);
 
     return {
       links,
+      active,
     };
   },
 });
 </script>
 
 <template>
-  <nav class="sticky top-0 bg-white">
+  <nav class="sticky top-0 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -47,9 +49,8 @@ export default defineComponent({
           </div>
         </div>
 
-        <div class="h-16 hidden lg:block">
+        <div class="h-16">
           <div class="h-full ml-10 flex space-x-3 items-center">
-
             <router-link
               :to="{ name: 'Buy Now' }"
               v-slot="{ isExactActive, navigate, href }"
@@ -64,7 +65,69 @@ export default defineComponent({
                 Buy Now
               </a>
             </router-link>
+            <button
+              class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              @click="active = !active"
+            >
+              <svg
+                v-if="!active"
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+
+              <svg
+                v-else
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
+        </div>
+      </div>
+      <div v-if="active" class="md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <router-link
+            v-for="link in links"
+            :key="link"
+            :to="{ name: link }"
+            v-slot="{ isExactActive, navigate, href }"
+            custom
+          >
+            <a
+              class="block px-3 py-2 rounded-md text-base font-medium"
+              :class="{
+                'bg-red-500 text-white': isExactActive,
+                'text-black hover:bg-red-400 hover:text-white': !isExactActive,
+              }"
+              :href="href"
+              @click="navigate"
+              :disabled="isExactActive"
+            >
+              {{ link }}
+            </a>
+          </router-link>
         </div>
       </div>
     </div>
