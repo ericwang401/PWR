@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-full">
     <svg
-      class="absolute hidden lg:block transform translate-x-1/20"
+      class="absolute hidden lg:block transform translate-x-1/20 -z-1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1737 1076.306"
     >
@@ -52,6 +52,10 @@
         </text>
       </g>
     </svg>
+
+    <div class="flex justify-center z-10">
+      <img class="max-w-7xl" src="@/assets/bike.png">
+    </div>
   </div>
 </template>
 

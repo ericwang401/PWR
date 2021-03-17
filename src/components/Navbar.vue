@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <nav class="sticky top-0 bg-white shadow-md">
+  <nav class="sticky z-50 top-0 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
