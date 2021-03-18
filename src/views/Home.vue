@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-full">
+  <div class="h-screen w-full mt-16">
     <svg
       class="absolute hidden lg:block transform translate-x-1/20 -z-1"
       xmlns="http://www.w3.org/2000/svg"

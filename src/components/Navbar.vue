@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <nav class="sticky z-50 top-0 bg-white shadow-md">
+  <nav class="fixed w-full z-50 top-0 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -106,7 +106,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div v-if="active" class="md:hidden">
+      <div v-if="active" class="lg:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <router-link
             v-for="link in links"
