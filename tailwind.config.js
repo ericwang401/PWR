@@ -13,11 +13,14 @@ module.exports = {
       },
       zIndex: {
         '-1': '-1',
-      }
+        '2': '2',
+      },
     },
   },
   variants: {
     extend: {
+      zIndex: ['hover'],
+      scale: ['hover'],
     },
   },
   plugins: [require("@tailwindcss/forms")],

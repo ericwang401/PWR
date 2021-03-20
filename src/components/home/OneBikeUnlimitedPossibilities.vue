@@ -17,7 +17,7 @@ export default defineComponent({
           Unlimited Possibilities
         </h1>
         <div class="flex flex-col md:flex-row justify-between space-y-3 md:space-y-0 md:space-x-3">
-          <div class="md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
+          <div class="transition duration-200 ease-in-out transform md:hover:z-2 md:hover:scale-110 md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
             <div class="flex flex-col space-y-2">
               <div class="flex w-full items-center space-x-3">
                 <span
@@ -41,7 +41,7 @@ export default defineComponent({
               </p>
             </div>
           </div>
-          <div class="md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
+          <div class="transition duration-200 ease-in-out transform md:hover:z-2 md:hover:scale-110 md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
             <div class="flex flex-col space-y-2">
               <div class="flex w-full items-center space-x-3">
                 <span
@@ -67,7 +67,7 @@ export default defineComponent({
               </p>
             </div>
           </div>
-          <div class="md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
+          <div class="transition duration-200 ease-in-out transform md:hover:z-2 md:hover:scale-110 md:w-1/3 bg-white shadow-lg rounded-md py-4 px-4">
             <div class="flex flex-col space-y-2">
               <div class="flex w-full items-center space-x-3">
                 <span
