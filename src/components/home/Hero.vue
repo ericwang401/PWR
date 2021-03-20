@@ -7,9 +7,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="h-screen overflow-y-hidden">
-    <div class="h-full w-full mt-16">
-      <div class="absolute h-full w-full overflow-y-hidden overflow-x-hidden hidden lg:block -z-1">
+  <div class="flex h-screen overflow-y-hidden mt-16">
+    <div class="h-screen w-full">
+      <div
+        class="absolute h-screen w-full overflow-y-hidden overflow-x-hidden hidden lg:block -z-1"
+      >
         <svg
           class="transform translate-x-1/20"
           xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +66,9 @@ export default defineComponent({
         </svg>
       </div>
 
-      <div class="absolute flex lg:hidden h-full w-full -z-1 text-center">
+      <div class="absolute flex lg:hidden h-screen w-full -z-1 text-center">
         <div class="w-full" style="transform: translateY(3%)">
+            <h1 class="text-2xl font-medium">Vite 3.0</h1>
           <h1
             class="w-full text-red-500 text-6xl sm:text-8xl md:text-9xl font-bold"
           >
@@ -75,7 +78,32 @@ export default defineComponent({
       </div>
 
       <div class="flex justify-center z-10">
-        <img class="lg:max-w-6xl" src="@/assets/bike.png" />
+        <img class="lg:max-w-5xl" src="@/assets/bike.png" />
+      </div>
+    </div>
+    <div class="absolute bg-white w-full h-1/4 bottom-0">
+      <div class="relative flex items-center h-full mx-auto max-w-2xl">
+        <div class="flex justify-between w-full max-w-7xl">
+          <div>
+            <h1>Vite</h1>
+          </div>
+          <div>
+            <router-link
+              :to="{ name: 'Buy Now' }"
+              v-slot="{ isExactActive, navigate, href }"
+              custom
+            >
+              <a
+                class="transition-colors flex items-center border-2 border-red-500 bg-red-500 text-white rounded-md py-1.5 px-7 hover:bg-transparent hover:text-red-500 focus:outline-none text-lg font-semibold"
+                :href="href"
+                @click="navigate"
+                :disabled="isExactActive"
+              >
+                Buy Now
+              </a>
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
