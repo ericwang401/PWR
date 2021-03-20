@@ -35,7 +35,7 @@ export default defineComponent({
         </div>
       </div>
 
-      <div class="flex justify-center z-10">
+      <div class="flex h-full justify-center items-center z-10">
         <img class="lg:max-w-5xl" src="@/assets/bike.png" />
       </div>
     </div>
