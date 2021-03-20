@@ -12,10 +12,10 @@ export default defineComponent({
       <div
         class="absolute h-4/6 w-full overflow-y-hidden overflow-x-hidden hidden lg:flex -z-1"
       >
-        <div class="flex items-center h-full w-1/2 overflow-x-hidden">
+        <div class="flex items-center h-full w-1/2 overflow-x-hidden text-red-500">
             <h1 class="font-bold text-9xl ml-auto">VERSATILE</h1>
         </div>
-        <div class="flex items-center h-full w-1/2 overflow-x-hidden bg-red-500">
+        <div class="flex items-center h-full w-1/2 overflow-x-hidden text-white bg-red-500">
             <h1 class="font-bold text-9xl mr-auto">VERSATILE</h1>
         </div>
       </div>
