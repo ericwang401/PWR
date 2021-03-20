@@ -13,10 +13,14 @@ export default defineComponent({
         class="absolute h-4/6 w-full overflow-y-hidden overflow-x-hidden hidden lg:flex -z-1"
       >
         <div class="flex items-center h-full w-1/2 overflow-x-hidden text-red-500">
-            <h1 class="font-bold text-9xl ml-auto">VERSATILE</h1>
+            <div class="w-screen text-center transform -translate-y-40">
+                <h1 class="font-bold w-screen" style="font-size: 12rem">VERSATILE</h1>
+            </div>
         </div>
         <div class="flex items-center h-full w-1/2 overflow-x-hidden text-white bg-red-500">
-            <h1 class="font-bold text-9xl mr-auto">VERSATILE</h1>
+            <div class="w-screen text-center" style="transform: translate(-49.3%, -10rem)">
+                <h1 class="font-bold w-full" style="font-size: 12rem">VERSATILE</h1>
+            </div>
         </div>
       </div>
 
