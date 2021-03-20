@@ -8,7 +8,7 @@ export default defineComponent({
 
 <template>
   <div class="h-screen overflow-y-hidden mt-16">
-    <div class="h-screen w-full">
+    <div class="h-4/6 w-full">
       <div
         class="absolute h-4/6 w-full overflow-y-hidden overflow-x-hidden hidden lg:flex -z-1"
       >
@@ -35,11 +35,11 @@ export default defineComponent({
         </div>
       </div>
 
-      <div class="flex h-4/6 justify-center items-center z-10">
+      <div class="flex h-full justify-center items-center z-10">
         <img class="lg:max-w-5xl" src="@/assets/bike.png" />
       </div>
     </div>
-    <div class="absolute bg-white w-full h-1/4 bottom-0">
+    <div class="bg-white w-full h-2/6">
       <div class="relative flex items-center h-full mx-auto max-w-2xl">
         <div class="flex justify-between w-full max-w-7xl">
           <div>
