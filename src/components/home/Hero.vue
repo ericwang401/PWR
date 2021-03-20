@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="flex h-screen overflow-y-hidden mt-16">
+  <div class="h-screen overflow-y-hidden mt-16">
     <div class="h-screen w-full">
       <div
         class="absolute h-screen w-full overflow-y-hidden overflow-x-hidden hidden lg:block -z-1"
@@ -87,7 +87,7 @@ export default defineComponent({
           <div>
             <h1>Vite</h1>
           </div>
-          <div>
+          <div class="flex space-x-5">
             <router-link
               :to="{ name: 'Buy Now' }"
               v-slot="{ isExactActive, navigate, href }"
@@ -100,6 +100,21 @@ export default defineComponent({
                 :disabled="isExactActive"
               >
                 Buy Now
+              </a>
+            </router-link>
+
+            <router-link
+              :to="{ name: 'Specifications' }"
+              v-slot="{ isExactActive, navigate, href }"
+              custom
+            >
+              <a
+                class="transition-colors flex items-center border-2 border-gray-300 text-gray-500 rounded-md py-1.5 px-7 hover:bg-transparent hover:text-black hover:border-gray-700 focus:outline-none text-lg"
+                :href="href"
+                @click="navigate"
+                :disabled="isExactActive"
+              >
+                Specifications
               </a>
             </router-link>
           </div>
