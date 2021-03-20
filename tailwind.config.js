@@ -9,6 +9,7 @@ module.exports = {
       },
       translate: {
         '1/20': '5%',
+        '1/5': '20%',
       },
       zIndex: {
         '-1': '-1',
