@@ -1,6 +1,6 @@
 <template>
   <v-hero />
-  <div class="h-screen w-full bg-red-500" style="margin-top: -64px">
+  <div class="h-screen w-full bg-red-500">
     <h1>wilkerson is the best</h1>
   </div>
 </template>

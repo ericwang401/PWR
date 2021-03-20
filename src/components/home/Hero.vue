@@ -6,27 +6,51 @@ export default defineComponent({
 });
 </script>
 
+<style scoped>
+.hero-container {
+    background: linear-gradient(to right, #F3F4F6 50%, red 50%);
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.hero:before {
+  position: absolute;
+  right: 0;
+  content: "VERS";
+  color: red;
+  font-size: 12rem;
+  font-weight: 700;
+  transform: translateY(-18rem);
+}
+.hero:after {
+  position: absolute;
+  left: 0;
+  content: "ATILE";
+  color: white;
+  font-size: 12rem;
+  font-weight: 700;
+  transform: translateY(-18rem);
+}
+</style>
+
 <template>
-  <div class="h-screen overflow-y-hidden mt-16">
-    <div class="h-4/6 w-full">
+  <div class="h-screen overflow-y-hidden">
+    <div class="h-5/6 w-full">
       <div
-        class="absolute h-4/6 w-full overflow-y-hidden overflow-x-hidden hidden lg:flex -z-1"
+        class="hero-container absolute h-5/6 w-full overflow-y-hidden overflow-x-hidden hidden lg:flex -z-1"
       >
-        <div class="flex items-center h-full w-1/2 overflow-x-hidden text-red-500">
-            <div class="w-screen text-center transform -translate-y-40">
-                <h1 class="font-bold w-screen" style="font-size: 12rem">VERSATILE</h1>
-            </div>
-        </div>
-        <div class="flex items-center h-full w-1/2 overflow-x-hidden text-white bg-red-500">
-            <div class="w-screen text-center" style="transform: translate(-49.3%, -10rem)">
-                <h1 class="font-bold w-full" style="font-size: 12rem">VERSATILE</h1>
-            </div>
-        </div>
+        <div class="hero"></div>
       </div>
 
       <div class="absolute flex lg:hidden h-screen w-full -z-1 text-center">
         <div class="w-full" style="transform: translateY(3%)">
-            <h1 class="text-2xl font-medium">Vite 3.0</h1>
+          <h1 class="text-2xl font-medium">Vite 3.0</h1>
           <h1
             class="w-full text-red-500 text-6xl sm:text-8xl md:text-9xl font-bold"
           >
@@ -36,11 +60,11 @@ export default defineComponent({
       </div>
 
       <div class="flex h-full justify-center items-center z-10">
-        <img class="lg:max-w-5xl" src="@/assets/bike.png" />
+        <img class="lg:max-w-4xl transform translate-y-5" src="@/assets/bike.png" />
       </div>
     </div>
-    <div class="bg-white w-full h-2/6">
-      <div class="relative flex items-center h-full mx-auto max-w-2xl">
+    <div class="bg-white w-full h-1/6">
+      <div class="flex items-center h-full mx-auto max-w-2xl">
         <div class="flex justify-between w-full max-w-7xl">
           <div>
             <h1>Vite</h1>
