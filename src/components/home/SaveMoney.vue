@@ -41,7 +41,7 @@ export default defineComponent({
             </h2>
             <p class="leading-relaxed text-base">
               We offer free replacements under our warranty and coverage plan
-              for $10/mo.
+              for $10/mo. No more negotiating with your insurance company because we got you covered.
             </p>
           </div>
         </div>
