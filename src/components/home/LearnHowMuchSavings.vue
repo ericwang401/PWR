@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="flex flex-col-reverse lg:flex-row-reverse">
+  <div class="flex flex-col-reverse items-stretch lg:flex-row-reverse">
     <div class="lg:w-2/3 bg-red-600">
       <div class="flex flex-col p-5 md:p-20 w-full space-y-8">
         <h1
@@ -19,7 +19,7 @@ export default defineComponent({
         <div class="w-full rounded-md bg-white shadow-md p-5">
           <div class="flex flex-col space-y-4">
             <div class="flex items-center space-x-1">
-              <h1>Empire State Building</h1>
+              <h1>Rockefeller Center</h1>
               <svg
                 class="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -138,6 +138,11 @@ export default defineComponent({
         </div>
       </div>
     </div>
-    <div class="lg:w-1/3 h-40"></div>
+    <div class="lg:w-1/3">
+      <div class="flex flex-col lg:flex-row h-full">
+        <iframe class="w-full lg:w-1/2 h-full" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d24174.59336376546!2d-73.98690212078199!3d40.765891830820166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x89c258fecf664df5%3A0x33d224a0d5dacca2!2sRockefeller%20Center%2C%20Rockefeller%20Plaza%2C%20New%20York%2C%20NY!3m2!1d40.7587402!2d-73.9786736!4m5!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park%2C%20New%20York%2C%20NY!3m2!1d40.781219899999996!2d-73.9665138!5e0!3m2!1sen!2sus!4v1616361457678!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="w-full lg:w-1/2 h-full" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d24173.619847333972!2d-73.99091965551652!3d40.768568026830955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89c258fecf664df5%3A0x33d224a0d5dacca2!2sRockefeller%20Center%2C%20Rockefeller%20Plaza%2C%20New%20York%2C%20NY!3m2!1d40.7587402!2d-73.9786736!4m5!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park%2C%20New%20York%2C%20NY!3m2!1d40.781219899999996!2d-73.9665138!5e0!3m2!1sen!2sus!4v1616361502889!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
   </div>
 </template>
