@@ -13,7 +13,7 @@ export default defineComponent({
         <h1
           class="font-bold relative text-white text-2xl text-center lg:text-left lg:text-4xl"
         >
-          Learn how much time you can save with PWR. Vite
+          Save more time with PWR. Vite
         </h1>
 
         <div class="w-full rounded-md bg-white shadow-md p-5">
