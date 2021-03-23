@@ -4,7 +4,7 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "Navbar",
   setup() {
-    const links = ["Home", "Technology", "Specifications", "Reviews"];
+    const links = ["Home", "Technology", "Specifications"];
     const active = ref(false);
 
     return {
