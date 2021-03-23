@@ -30,6 +30,16 @@ const routes: Array<RouteRecordRaw> = [
         path: "buy-now",
         component: () => import('@/views/Home.vue'),
       },
+      {
+        name: "Sources",
+        path: "sources",
+        component: () => import('@/views/Home.vue'),
+      },
+      {
+        name: "About",
+        path: "about",
+        component: () => import('@/views/Home.vue'),
+      },
     ]
   },
 ]

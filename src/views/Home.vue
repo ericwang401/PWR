@@ -6,6 +6,7 @@
   <business-reviews />
   <reviews />
   <ready-to-buy />
+  <Footer />
 </template>
 
 <script lang="ts">
@@ -17,6 +18,7 @@ import SaveMoney from "@/components/home/SaveMoney.vue";
 import Reviews from "@/components/home/Reviews.vue";
 import BusinessReviews from "@/components/home/BusinessReviews.vue";
 import ReadyToBuy from "@/components/home/ReadyToBuy.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Home",
@@ -27,7 +29,8 @@ export default defineComponent({
     SaveMoney,
     Reviews,
     BusinessReviews,
-    ReadyToBuy
+    ReadyToBuy,
+    Footer
   },
 });
 </script>
