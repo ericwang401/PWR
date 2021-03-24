@@ -20,7 +20,7 @@ export default defineComponent({
   </div>
   <div class="bg-white py-5">
     <div class="flex flex-col space-y-5 max-w-7xl mx-auto justify-center">
-      <img class="px-40" src="@/assets/bike.png" alt="PWR. Vite bike" />
+      <img class="lg:px-40" src="@/assets/bike.png" alt="PWR. Vite bike" />
       <h1 class="font-bold text-center text-4xl text-red-500">PWR. Vite</h1>
       <div class="w-full">
         <table class="table-auto mx-auto">

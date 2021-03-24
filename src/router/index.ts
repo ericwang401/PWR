@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         name: "Buy Now",
         path: "buy-now",
-        component: () => import('@/views/Home.vue'),
+        component: () => import('@/views/BuyNow.vue'),
       },
       {
         name: "Sources",

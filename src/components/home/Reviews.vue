@@ -58,10 +58,8 @@ export default defineComponent({
             ></path>
           </svg>
           <p class="leading-relaxed mb-6">
-            Synth chartreuse iPhone lomo cray raw denim brunch everyday carry
-            neutra before they sold out fixie 90's microdosing. Tacos pinterest
-            fanny pack venmo, post-ironic heirloom try-hard pabst authentic
-            iceland.
+            As a regular bike rider, I had some doubts of this particular product. But once I got on, knew it was meant for me. The amazing feel and speed is a standard that cannot be matched. It helps me get everywhere I need to go. I have no regrets.
+
           </p>
           <a class="inline-flex items-center">
             <img
