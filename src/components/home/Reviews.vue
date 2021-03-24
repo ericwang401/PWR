@@ -69,9 +69,9 @@ export default defineComponent({
             />
             <span class="flex-grow flex flex-col pl-4">
               <span class="title-font font-medium text-gray-900"
-                >Wilkerson Schultz</span
+                >Caillou Anderson</span
               >
-              <span class="text-gray-500 text-sm">Professional</span>
+              <span class="text-gray-500 text-sm">Grubhub Delivery Driver</span>
             </span>
           </a>
         </div>
