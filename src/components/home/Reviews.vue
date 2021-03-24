@@ -33,14 +33,14 @@ export default defineComponent({
           <a class="inline-flex items-center">
             <img
               alt="testimonial"
-              src="https://dummyimage.com/106x106"
+              src="@/assets/wilkerson.jpg"
               class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
             />
             <span class="flex-grow flex flex-col pl-4">
               <span class="title-font font-medium text-gray-900"
-                >Holden Caulfield</span
+                >Wilkerson Schultz</span
               >
-              <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+              <span class="text-gray-500 text-sm">Daily Commuter</span>
             </span>
           </a>
         </div>
@@ -71,9 +71,9 @@ export default defineComponent({
             />
             <span class="flex-grow flex flex-col pl-4">
               <span class="title-font font-medium text-gray-900"
-                >Alper Kamu</span
+                >Wilkerson Schultz</span
               >
-              <span class="text-gray-500 text-sm">DESIGNER</span>
+              <span class="text-gray-500 text-sm">Professional</span>
             </span>
           </a>
         </div>
