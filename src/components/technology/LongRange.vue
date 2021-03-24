@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="text-white bg-red-600 body-font">
+  <section class="text-white bg-red-600 body-font" id="learnmore">
     <div class="max-w-7xl mx-auto py-5">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div
@@ -89,7 +89,7 @@ export default defineComponent({
           </div>
         </div>
         <div
-          class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
+          class="lg:w-1/3 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
         >
           <img
             class="object-cover object-center w-full h-full"

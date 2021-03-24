@@ -26,11 +26,12 @@ export default defineComponent({
             promise on peak performance.
           </p>
           <div class="flex justify-center">
-            <button
+            <a
+            href="#learnmore"
               class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
             >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
         <div
