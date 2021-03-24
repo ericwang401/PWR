@@ -64,7 +64,7 @@ export default defineComponent({
           <a class="inline-flex items-center">
             <img
               alt="testimonial"
-              src="https://dummyimage.com/107x107"
+              src="@/assets/driver.webp"
               class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
             />
             <span class="flex-grow flex flex-col pl-4">

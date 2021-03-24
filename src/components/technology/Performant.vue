@@ -22,7 +22,7 @@ export default defineComponent({
           </div>
         </div>
         <div
-          class="lg:w-1/3 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 p-4 sm:mt-0"
+          class="lg:w-1/3 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
         >
           <img
             class="object-cover object-center w-full h-full"

@@ -9,6 +9,8 @@ export default defineComponent({
       "https://pixabay.com/photos/mountain-bike-e-bike-ebike-bike-5567847/",
       "https://unsplash.com/photos/YOk0D5sz3e4",
       "https://unsplash.com/photos/QnSjbDB57AU",
+      "https://unsplash.com/photos/XhMSz5I1kn8",
+      "https://unsplash.com/photos/t0Aio60jD4Q"
     ];
     return { images };
   },
