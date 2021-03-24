@@ -9,9 +9,9 @@ export default defineComponent({
 <template>
   <section class="text-black bg-gray-200 body-font">
     <div class="max-w-7xl mx-auto py-5">
-      <div class="container px-5 py-24 mx-auto flex flex-row-reverse flex-wrap">
+      <div class="container px-5 py-24 mx-auto flex justify-between flex-row-reverse flex-wrap">
         <div
-          class="flex justify-between flex-wrap mt-auto mb-auto lg:w-1/2 sm:w-2/3 sm:pr-10"
+          class="flex flex-wrap mt-auto mb-auto lg:w-1/2 sm:w-2/3 sm:pr-10"
         >
           <div class="w-full sm:p-4 px-4 mb-6">
             <h1 class="title-font font-bold text-4xl mb-2 text-black">

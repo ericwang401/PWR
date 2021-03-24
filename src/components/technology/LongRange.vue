@@ -9,7 +9,7 @@ export default defineComponent({
 <template>
   <section class="text-white bg-red-600 body-font" id="learnmore">
     <div class="max-w-7xl mx-auto py-5">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="container justify-between px-5 py-24 mx-auto flex flex-wrap">
         <div
           class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10"
         >
