@@ -57,6 +57,9 @@ export default defineComponent({
               custom
             >
               <a
+                :class="{
+                  'hidden': isExactActive
+                }"
                 class="transition-colors flex items-center border-2 border-red-500 bg-red-500 text-white rounded-md py-1.5 px-7 hover:bg-transparent hover:text-red-500 focus:outline-none text-lg font-semibold"
                 :href="href"
                 @click="navigate"
