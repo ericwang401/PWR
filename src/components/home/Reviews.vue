@@ -33,7 +33,7 @@ export default defineComponent({
           <a class="inline-flex items-center">
             <img
               alt="testimonial"
-              src="@/assets/wilkerson.jpg"
+              src="@/assets/wilkerson.webp"
               class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
             />
             <span class="flex-grow flex flex-col pl-4">
