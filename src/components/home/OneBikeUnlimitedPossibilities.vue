@@ -6,6 +6,19 @@ export default defineComponent({
 });
 </script>
 
+<style scoped>
+.hero-image {
+  background-image: url("~@/assets/mountain-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.height-mobile {
+  height: 30rem;
+}
+</style>
+
 <template>
   <div class="flex flex-col lg:flex-row">
     <div class="lg:w-2/3 bg-red-600">
@@ -100,6 +113,7 @@ export default defineComponent({
         </div>
       </div>
     </div>
-    <div class="lg:w-1/3"></div>
+    <div class="lg:w-1/3 lg:h-full height-mobile hero-image">
+    </div>
   </div>
 </template>
